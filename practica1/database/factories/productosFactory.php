@@ -21,7 +21,9 @@ class productosFactory extends Factory
             'descripcion'=>$this->faker->sentence(),
             'categoria'=>$this->faker->sentence(),
             'precioCompra'=>$this->faker->biasedNumberBetween(0, 20),
-            'precioVenta'=>$this->faker->biasedNumberBetween(0, 20)  
+            'precioVenta'=>$this->faker->biasedNumberBetween(0, 20),
+            'stock'=>$this->faker->numberBetween(1,20)
+              
         ];
     }
 }

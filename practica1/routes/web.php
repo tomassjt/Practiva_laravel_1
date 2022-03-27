@@ -12,5 +12,8 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', [IndexController::class, 'index']);
+Route::get('/', [IndexController::class, 'index']); //este llama al metodo index del el controlador indexController
+Route::get('MostrarProductos', [IndexController::class, 'Mostrar'])->name('MostrarProductos.Mostrar');//este llama al metodo Mostrar
+Route::get('AgregarProducto', [IndexController::class, 'Agregar'])->name('AgregarProducto.Agregar');
+Route::post('Insertar', [IndexController::class, 'InsertarProductos'])->name('Insertar.InsertarProductos');
  

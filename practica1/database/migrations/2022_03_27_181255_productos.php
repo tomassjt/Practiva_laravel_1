@@ -20,6 +20,7 @@ return new class extends Migration
             $table->text('categoria');
             $table->decimal('precioCompra','5','2');
             $table->decimal('precioVenta','5','2');
+            $table->bigInteger('stock');
             $table->timestamps();
         });
     }
