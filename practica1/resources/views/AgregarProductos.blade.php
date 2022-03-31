@@ -11,14 +11,14 @@
 
 
 <label>Nombre</label>    
-<input type="text" name="nombre">
+<input type="text" name="nombre" value="{{old('nombre')}}">
  
 @error('nombre')
 <small>*{{$message}}</small>
 @enderror
 <br>
 <label>Descripcion</label>    
-<textarea name="descripcion" cols="35" rows="10"></textarea>
+<textarea name="descripcion" cols="35" rows="10" ></textarea>
 @error('descripcion')
 <small>*{{$message}}</small>
 @enderror
