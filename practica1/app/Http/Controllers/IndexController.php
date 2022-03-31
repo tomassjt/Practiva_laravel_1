@@ -26,6 +26,17 @@ class IndexController extends Controller
     }
 
     public function InsertarProductos(request $Request){
+
+
+        $Request->validate([
+            'nombre'=>'required',
+            'descripcion'=>'required',
+            'categoria'=>'required',
+            'precioCompra'=>'required',
+            'precioVenta'=>'required',
+            'stock'=>'required'
+        ]);
+
         $productos = new productos();
         $productos->nombre = $Request->nombre;
         $productos->descripcion = $Request->descripcion;
